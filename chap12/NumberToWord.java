@@ -18,7 +18,14 @@ public class NumberToWord {
 		String converted = "";
 		int pos = 1;
 		boolean hun = false;
+		if (input.length() == 0) {
+			converted = "zero";
+		}
 		while (input.length() > 0) {
+			if (num >= 1000000000) {
+				converted = "Number should be Less than 1 Bilion";
+				break;
+			}
 			if (pos == 1) // TENS AND UNIT POSITION
 			{
 				if (input.length() >= 2) // TWO DIGIT NUMBERS
