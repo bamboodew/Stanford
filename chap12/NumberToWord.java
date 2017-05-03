@@ -3,6 +3,7 @@ package chap12;
 import java.util.*;
 
 public class NumberToWord {
+
 	private static String input;
 	private static int num;
 	private static String[] units = { "", " One", " Two", " Three", " Four", " Five", " Six", " Seven", " Eight",
